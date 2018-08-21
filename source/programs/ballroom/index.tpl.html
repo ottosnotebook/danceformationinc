@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- INCLUDE HEAD -->
+        @@include('../../_partials/_head.html', {
+            "title": "Ballroom - Danceformation Inc."
+        })
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        @@include('../../_partials/_navbar.html')
+
+        <!-- INCLUDE HERO -->
+        @@include('../../_partials/_hero.html', {
+            "section-class": "ballroom-hero",
+            "title": "ballroom",
+            "subtitle": "",
+            "button-display": "",
+            "button": "schedule a lesson",
+            "button-link": "/contact"
+        })
+
+        <!-- INCLUDE INSTRUCTOR STATS -->
+        @@include('../../_partials/_stats.html', {
+            "stat-one": "400",
+            "stat-one-title": "calories burned after one hour of cha cha",
+
+            "stat-two": "waltz, foxtrot",
+            "stat-two-title": "most popular dances",
+
+            "stat-three": "40",
+            "stat-three-title": "combined years of ballroom experience"
+        })
+
+        <!-- INCLUDE INFO -->
+        @@include('../../_partials/_info.html', {
+            "section-class": "ballroom-info",
+            "heading": "mi piace gli spaghetti",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        })
+
+        <!-- INCLUDE TESTIMONIALS -->
+        @@include('../../_partials/_testimonial.html', {
+            "section-class": "ballroom-testimonial",
+
+            "name-one": "tyler re",
+            "paragraph-one": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+            "name-two": "tony morris",
+            "paragraph-two": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+
+            "name-three": "paul godfrey",
+            "paragraph-three": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        })
+
+        @@include('../../_partials/_footer.html')
+
+
+        <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+.form-group {
+    label {
+        color: gray;
+        @include font-size(24px);
+        margin: 0;
+    }
+
+    .form-control {
+        @include font-size(16px);
+        color: $brand-black;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+        border-bottom: 3px solid lightgray;
+        resize: none;
+        padding: 10px 2px 0 0;
+
+        select {
+            height: 87px;
+        }
+
+        &:not(textarea) {
+            height: 50px;
+        }
+    }
+}

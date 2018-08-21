@@ -1,0 +1,26 @@
+<section class="hero" style="background-image: url('<%= current_page.data.hero.background || "#" %>');">
+    <div class="hero-screen">
+        <div class="hero-wrap margin-auto text-center">
+            <h1 class="hero-title">
+                <%= current_page.data.hero.title %>
+            </h1>
+            
+            
+            <% if current_page.data.hero.subtitle %>
+            <h3 class="hero-subtitle">
+                <%= current_page.data.hero.subtitle %>
+            </h3>
+            <% end %>
+            
+            
+            <% if current_page.data.hero.button %>
+            <a href="<%= current_page.data.hero.button_link || "#" %>">
+                <button class="hero-button btn-light-fill margin-top-2">
+                    <%= current_page.data.hero.button %>
+                </button>
+            </a>
+            <% end %>
+        
+        </div>
+    </div>
+</section>

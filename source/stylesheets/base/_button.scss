@@ -1,0 +1,68 @@
+.btn {
+    @include prefix(border-radius, 2px, webkit moz ms o);
+    @include prefix(transition, background-color .25s linear, webkit moz ms o);
+    @include font-size(16px);
+
+    font-family: $open-sans-stack;
+    font-weight: 300;
+    padding: 10px 30px; // convert to rem
+    text-transform: uppercase;
+    line-height: initial;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-light-fill {
+    @extend .btn;
+
+    background-color: $brand-lightblue;
+    color: $brand-white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+
+    &:hover {
+        background-color: transparentize($brand-lightblue, .2);
+    }
+}
+
+.btn-dark-fill {
+    @extend .btn;
+
+    background-color: $brand-darkblue;
+    color: $brand-white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+
+    &:hover {
+        background-color: transparentize($brand-darkblue, .2);
+    }
+}
+
+.btn-light-border {
+    @extend .btn;
+
+    background-color: transparent;
+    border: 1px solid $brand-lightblue;
+    color: $brand-lightblue;
+
+    &:hover {
+        background-color: $brand-lightblue;
+        color: $brand-white;
+    }
+}
+
+.btn-dark-border {
+    @extend .btn;
+
+    background-color: transparent;
+    border: 1px solid $brand-lightblue;
+    color: $brand-lightblue;
+
+    &:hover {
+        background-color: $brand-lightblue;
+        color: $brand-white;
+    }
+}

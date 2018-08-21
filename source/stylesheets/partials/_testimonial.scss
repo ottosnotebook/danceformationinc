@@ -1,0 +1,12 @@
+.testimonials {
+    .item-inner { width: 75%; }
+
+    .carousel-indicators {
+        bottom: 0;
+        
+        li { border-color: black; }
+        .active { background-color: black; }
+    }
+    
+    p { font-size: 20px; }
+}

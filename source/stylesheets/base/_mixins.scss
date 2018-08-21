@@ -1,0 +1,26 @@
+/*  automatically add vendor previxes - MUST BE SPECIFIED AS FUNC PARAM  */
+@mixin prefix($property, $value, $vendors: webkit moz ms o) {
+      @if $vendors {
+        @each $vendor in $vendors {
+          #{"-" + $vendor + "-" + $property}: #{$value};
+        }
+      }
+      #{$property}: #{$value};
+}
+
+//- rgba, for ie
+@mixin background-opacity($color, $opacity) {
+    background-color: $color;
+    background-color: transparentize($color, $opacity);
+}
+
+//- font size
+@function calculateRem($size) {
+  $remSize: $size / 14px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}

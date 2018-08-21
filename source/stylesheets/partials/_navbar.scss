@@ -1,0 +1,77 @@
+.header {
+    line-height: 100px;
+
+    .header-wrap {
+        transform: translateY(15%);
+        width: 90%;
+    }
+
+    .logo {
+        display: inline;
+        color: $brand-lightblue;
+        @include font-size(30px);
+        font-family: $oswald-stack;
+        text-transform: uppercase;
+    }
+
+    nav {
+        li {
+            text-transform: uppercase;
+            margin: 0 10px;
+            @include font-size(14px);
+        }
+
+        .dropdown {
+            line-height: 20px;
+            display: inline;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .dropdown-menu {
+            transform: translateX(40%);
+            margin-top: 15px;
+            background-color: $brand-white;
+
+            hr {
+                margin: 5px 0;
+                border-top: 1px solid darkgray;
+            }
+        }
+
+        .dropdown-item {
+            display: block;
+            text-align: left;
+            padding: 10px;
+
+            &:hover {
+                background-color: $brand-gray;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header {
+        line-height: 50px;
+
+        .logo {
+            margin: 20px auto 0;
+            text-align: center;
+            display: block;
+        }
+
+        nav {
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            float: none;
+
+            li {
+                margin: 0 4px;
+            }
+        }
+    }
+}

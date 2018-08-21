@@ -1,0 +1,126 @@
+.home-calendar {
+
+    .row {
+        margin-left: 3%;
+    }
+    .event {
+        padding: 15px;
+        margin: 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .calendar-date {
+        // color: $brand-lightblue;
+        // background-color: $brand-darkblue;
+        border: 4px solid #4ABBC7;
+        @include font-size(36px);
+        display: inline-block;
+        height: 135px;
+        width: 35%;
+        margin-top: -30px;
+        margin-left: -30px;
+        min-width: 90px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.05),0 1px 2px rgba(0,0,0,0.05);
+
+        h1 {
+            @include font-size(48px);
+            margin: 10px 0;
+
+        }
+    }
+
+    .calendar-info {
+        float: right;
+        width: 60%;
+        overflow-wrap: break-word;
+
+        h2 {
+            font-family: $open-sans-stack;
+            @include font-size(20px);
+            font-weight: 300;
+            color: #153351;
+        }
+    }
+
+    button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+// FIXME: very confusing breakpoints for the calendar. would you like some parmesean for your spaghetti?
+// would really like to use :not() here but it doesn't have the browser support I need
+
+@media all and (min-width: 992px) {
+    .event {
+        width: 28%;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+    .event {
+        width: 43%;
+    }
+}
+
+@media all and (max-width: 767px) {
+    .home-calendar .event {
+        width: 60%;
+        margin-left: 18%;
+        clear: both;
+        min-height: 267px;
+    }
+
+    .home-calendar .calendar-date {
+        margin: 0 auto;
+        width: 65%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .home-calendar .calendar-info {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 767px) and (min-width: 550px) {
+    .home-calendar .event {
+        width: 40%;
+        margin: 5%;
+        clear: none;
+    }
+}
+
+//
+// @media all and (max-width: 991px) {
+//     .home-calendar .flex-calendar {
+//         margin: 10px;
+//         padding: 10px;
+//     }
+//
+//     .home-calendar .calendar-date {
+//         margin: 0 auto;
+//         width: 65%;
+//         position: relative;
+//         left: 50%;
+//         transform: translateX(-50%);
+//     }
+//
+//     .home-calendar .calendar-info {
+//         width: 100%;
+//         float: none;
+//         text-align: center;
+//     }
+// }
+//
+// @media all and (max-width: 600px) {
+//     .home-calendar .flex-calendar-more {
+//         width: 58%;
+//         clear: both;
+//     }
+// }

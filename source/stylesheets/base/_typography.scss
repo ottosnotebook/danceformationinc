@@ -1,0 +1,62 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $oswald-stack;
+    color: $brand-lightblue;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    color: $brand-black;
+
+    &:hover {
+        color: $brand-lightblue;
+        text-decoration: none;
+    }
+    &:focus {
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+.hero-title {
+    font-family: $oswald-stack;
+    @include font-size(64px);
+    font-weight: 400;
+    color: $brand-lightblue;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    @include font-size(18px);
+    font-weight: 300;
+    line-height: 25px;
+    color: $brand-black;
+}
+
+.section-title {
+    font-family: $oswald-stack;
+    @include font-size(36px);
+    font-weight: 400;
+    color: $brand-lightblue;
+    text-transform: uppercase;
+}
+
+@media all and (max-width: 600px) {
+    .section-title {
+        @include font-size(28px);
+    }
+}

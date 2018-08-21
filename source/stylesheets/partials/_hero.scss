@@ -1,0 +1,39 @@
+.hero {
+    height: 70vh;
+    min-height: 400px;
+    background-color: $brand-darkblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .hero-screen {
+        height: 70vh;
+        min-height: 400px;
+        background-color: rgba(0,23,39,.7);
+    }
+
+    .hero-wrap {
+        position: relative;
+        top: 45%;
+        transform: translateY(-50%);
+        width: 80%;
+        max-width: 600px;
+    }
+
+    .hero-title {
+        text-shadow: 1px 1px 20px #2b2b2b;
+    }
+
+    .hero-subtitle {
+        color: white;
+        font-family: $open-sans-stack;
+        font-size: 18px;
+        font-weight: lighter;
+        text-transform: none;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .hero-title {
+        @include font-size(34px);
+    }
+}

@@ -1,0 +1,60 @@
+@for $i from 0 through 10 {
+    .margin-bottom-#{$i} {
+        margin-bottom: 10px * $i;
+    }
+}
+
+@for $i from 0 through 10 {
+    .margin-top-#{$i} {
+        margin-top: 10px * $i;
+    }
+}
+
+.pad-top { padding-top: 50px; }
+.pad-top-more { padding-top: 100px; }
+.pad-top-less { padding-top: 25px; }
+.pad-bottom { padding-bottom: 50px; }
+.pad-bottom-more { padding-bottom: 100px; }
+.pad-bottom-less { padding-bottom: 25px; }
+.pad-left { padding-left: 50px; }
+.pad-left-more { padding-left: 100px; }
+.pad-left-less { padding-left: 25px; }
+.pad-right { padding-right: 50px; }
+.pad-right-more { padding-right: 100px; }
+.pad-right-less { padding-right: 25px; }
+.margin-top { margin-top: 50px; }
+.margin-top-more { margin-top: 100px; }
+.margin-top-less { margin-top: 25px; }
+.margin-bottom { margin-bottom: 50px; }
+.margin-bottom-more { margin-bottom: 100px; }
+.margin-bottom-less { margin-bottom: 25px; }
+.margin-left { margin-left: 50px; }
+.margin-left-more { margin-left: 100px; }
+.margin-left-less { margin-left: 25px; }
+.margin-right { margin-right: 50px; }
+.margin-right-more { margin-right: 100px; }
+.margin-right-less { margin-right: 25px; }
+
+.text-center {text-align: center;}
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-justify {text-align: justify;}
+.float-left {float: left;}
+.float-right {float: right;}
+
+.full-width {
+    max-width: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.margin-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* only use for a floated element's parent */
+.float-clear:after {
+        content: "";
+        display: block;
+        clear: both;
+}

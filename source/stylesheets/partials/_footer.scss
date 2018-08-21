@@ -1,0 +1,38 @@
+footer {
+
+    .wrapper {
+        border-top: 1px solid lightgray;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .footer-info, .footer-twitter, .footer-instagram {
+        padding: 5%;
+    }
+    .co-name, .twitter-name, .instagram-name {
+        @include font-size(28px);
+        text-transform: uppercase;
+    }
+
+    .info {
+        @include font-size(18px);
+    }
+
+    .social-icon img {
+        width: 30px;
+        margin-right: 5px;
+    }
+
+    .lower-foot {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+        background-color: $brand-darkblue;
+        padding-left: 5%;
+        color: $brand-gray;
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.instructors-hero {
+    background-image: url('/assets/temp_img_2.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.instructors-list {
+
+    a {
+        display: block;
+    }
+
+    .wrapper {
+        margin-top: 0;
+    }
+
+    .instructors {
+    }
+
+    .instructor {
+        min-height: 250px;
+        position: relative;
+        margin: 0 auto 40px;
+        @include prefix(transition, opacity .2s linear, webkit moz ms o);
+
+        img {
+            max-width: 100%;
+            opacity: 1;
+            transition: .2s ease-in-out;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            -webkit-backface-visibility: hidden;
+        }
+
+        figcaption {
+            transform: translateY(-100%);
+            min-height: 79%;
+            width: 90%;
+            position: absolute;
+            transition: .2s ease-in-out;
+            opacity: 0;
+            display: flex;
+
+            .section-title {
+                color: $brand-white;
+                @include font-size(28px);
+            }
+
+            .paragraph {
+                color: $brand-white;
+            }
+        }
+
+        .caption-wrap {
+            margin: auto;
+        }
+
+        &:hover {
+            figcaption {
+                opacity: 1;
+            }
+
+            img {
+                opacity: .6;
+                filter: brightness(40%);
+            }
+        }
+    }
+}
+
+@media all and (max-width: 700px) {
+    .instructors-list .instructor figcaption {
+        .section-title {
+            @include font-size(20px);
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .instructor {
+        width: 80%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+//- CARLA
+.carla-hero {
+    background-image: url('/assets/temp_img_3.png');
+    background-size: cover;
+    background-position: center;
+}
+
+//- DANIEL
+.daniel-hero {
+    background-image: url('/assets/temp_img_2.png');
+    background-size: cover;
+    background-position: center;
+}

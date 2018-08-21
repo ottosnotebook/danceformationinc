@@ -1,0 +1,23 @@
+.contact-hero {
+    background-image: url('/assets/temp_img.png');
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+}
+
+
+.submit-contact-form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media all and (min-width: 992px) {
+    // for material design
+    .contact-form {
+        width: 65%; // KEEP THIS
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        margin-top: -60px;
+        background-color: $brand-white;
+    }
+}

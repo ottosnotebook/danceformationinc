@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- INCLUDE HEAD -->
+        @@include('../../_partials/_head.html', {
+            "title": "Swing - Danceformation Inc."
+        })
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        @@include('../../_partials/_navbar.html')
+
+        <!-- INCLUDE HERO -->
+        @@include('../../_partials/_hero.html', {
+            "section-class": "swing-hero",
+            "title": "swing",
+            "subtitle": "",
+            "button-display": "",
+            "button": "schedule a lesson",
+            "button-link": "/contact"
+        })
+
+        <!-- INCLUDE INSTRUCTOR STATS -->
+        @@include('../../_partials/_stats.html', {
+            "stat-one": "900",
+            "stat-one-title": "calories burned after one hour of lindy",
+
+            "stat-two": "east coast, west coast, lindy, shag",
+            "stat-two-title": "most popular dances",
+
+            "stat-three": "25",
+            "stat-three-title": "combined years of swing experience"
+        })
+
+        <!-- INCLUDE INFO -->
+        @@include('../../_partials/_info.html', {
+            "heading": "mi piace gli spaghetti",
+            "paragraph": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        })
+
+        <!-- INCLUDE TESTIMONIALS -->
+        @@include('../../_partials/_testimonial.html', {
+            "section-class": "swing-testimonial",
+
+            "name-one": "Mary Meglaughlin",
+            "paragraph-one": "Wonderful place to learn to dance. Fantastic instructors, lots of group classes and a great Friday night practice party to try out all you've learned!!!",
+
+            "name-two": "Jane Ellen Siebert",
+            "paragraph-two": "Danceformation, Inc…is the best ballroom dance studio in town. Why, you ask…..the people! The instructors, the dancers, and the atmosphere is awesome! Every Friday night, that's where you will find me...at the practice party. Dancing, sharing conversations, and having fun!",
+
+            "name-three": "paul godfrey",
+            "paragraph-three": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        })
+
+        @@include('../../_partials/_footer.html')
+
+
+        <script src="/assets/js/jquery.min.js" type="text/javascript"></script>
+        <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+
+    </body>
+</html>

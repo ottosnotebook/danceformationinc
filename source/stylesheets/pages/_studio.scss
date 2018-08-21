@@ -1,0 +1,72 @@
+// move to separate file in components if you use the gallery again
+.studio-hero {
+    background-image: url('/assets/temp_img.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.gallery {
+    img {
+        overflow: hidden;
+        max-width: 100%;
+        @include prefix(filter, brightness(60%), webkit);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: .2s ease-in;
+
+        &:hover {
+            @include prefix(filter, brightness(100%), webkit);
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+    }
+}
+
+.modal {
+
+    img {
+        max-width: 90%;
+    }
+
+    .modal-body, .modal-header {
+        background-color: $brand-black;
+        border-color: $brand-lightblue;
+
+    }
+}
+
+
+
+@media all and (min-width: 992px) {
+    .modal-lg {
+        // width: 85vw;
+    }
+
+    .modal-dialog {
+        width: inherit;
+    }
+}
+
+
+// for lg-md-short-img
+@media all and (min-width: 1200px) {
+    .lg-short-img {
+        overflow: hidden;
+        height: 240px;
+
+        img {
+            margin-top: -10%;
+        }
+    }
+}
+
+@media all and (max-width: 600px) {
+    .gallery-image {
+        width: 100%;
+        clear: both;
+
+        img {
+            @include prefix(filter, brightness(100%), webkit);
+            pointer-events: none;
+        }
+    }
+}
