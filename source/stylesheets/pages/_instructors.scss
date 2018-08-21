@@ -25,7 +25,8 @@
         @include prefix(transition, opacity .2s linear, webkit moz ms o);
 
         img {
-            max-width: 100%;
+            width: 100%;
+            height: 350px;
             opacity: 1;
             transition: .2s ease-in-out;
             box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);

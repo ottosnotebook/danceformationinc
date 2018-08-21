@@ -1,4 +1,4 @@
-<section class="hero" style="background-image: url('<%= current_page.data.hero.background || "#" %>');">
+<section class="hero" style="background-image: url('<%= current_page.data.hero.background || "#" %>'); <% if defined? current_page.data.hero.background_position %>background-position: <%= current_page.data.hero.background_position %>;<% end %>">
     <div class="hero-screen">
         <div class="hero-wrap margin-auto text-center">
             <h1 class="hero-title">
@@ -8,7 +8,7 @@
             
             <% if current_page.data.hero.subtitle %>
             <h3 class="hero-subtitle">
-                <%= current_page.data.hero.subtitle %>
+                <%= current_page.data.hero.subtitle %> 
             </h3>
             <% end %>
             
